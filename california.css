@@ -1,0 +1,131 @@
+@import url('https://fonts.cdnfonts.com/css/product-sans');
+
+body {
+  margin: 0 auto;
+  color: white;
+  background-color: black;
+  font-family: 'Product Sans', sans-serif;  
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+span {
+  color: #dc1d1b;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#back-arrow {
+  position: fixed;
+  top: 50%;
+  margin-top: -33px;
+  left: 50px;
+  width: 60px;
+  height: auto;
+}
+
+.county {
+  fill: #fff;
+  stroke: #000;
+}
+
+p {
+  font-size: 24px;
+}
+
+/* span {
+  color: #dc1d1b;
+} */
+
+.split-screen-container {
+  height: 300vh;
+  display: flex;
+}
+
+.image-side {
+  height: 100vh;
+  width: 50%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.text-side {
+  margin-left: 50%;
+  height: 100%;
+}
+
+.text-side div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-side div> p{
+  width: 80%;
+  line-height: 42px;
+}
+
+/* Circle */
+.circle {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #dc1d1b;
+  position: fixed;
+  bottom: 230px;
+  left: 180px;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.circle:before,
+.circle:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  border: 1px solid #dc1d1b;
+  border-radius: 50%;
+  align-items: center;
+  justify-content:center;
+}
+
+.circle:before {
+  animation: ripple 2s linear infinite;
+}
+
+.circle:after {
+  animation: ripple 2s linear 1s infinite;
+}
+
+.circle:hover {
+  background-color: black;
+
+}
+
+@keyframes ripple{
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); opacity:1; }
+  100% { transform: scale(1.6); opacity:0; }
+}
+
+/* Text */
+.text {
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+}

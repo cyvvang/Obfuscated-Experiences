@@ -1,0 +1,39 @@
+@import url('https://fonts.cdnfonts.com/css/product-sans');
+
+body {
+  margin: 0 auto;
+  color: white;
+  background-color: black;
+  font-family: 'Product Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+span {
+  font-size: 40px;
+  color: #dc1d1b;
+}
+
+.text {
+  text-align: center;
+  font-size: 24px;
+  line-height: 42px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* .text:hover {
+ animation: fadeOut 3s;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+} */
